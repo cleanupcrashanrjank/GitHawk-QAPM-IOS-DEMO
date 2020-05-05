@@ -1,4 +1,4 @@
-<a href="https://itunes.apple.com/app/githawk-for-github/id1252320249"><img src="images/githawk-pulse.gif" /></a>
+<a href="https://itunes.apple.com/app/githawk-for-github/id1252320249"><img src="images/githawk-pulse.gif" /></a> ❤️ QAPM
 <p align="center"><a href="https://itunes.apple.com/app/githawk-for-github/id1252320249"><img src="images/app-store-badge.png" width="250" /></a></p>
 
 <p align="center">
