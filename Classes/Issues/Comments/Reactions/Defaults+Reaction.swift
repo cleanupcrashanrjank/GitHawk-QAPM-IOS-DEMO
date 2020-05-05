@@ -7,7 +7,7 @@
 //
 extension UserDefaults {
 
-    private static let defaultKey = "com.whoisryannystrom.freetime.default-reaction"
+    private static let defaultKey = "com.tencent.qapm.githawkdemo.default-reaction"
     private static let disabledValue = "disabled"
 
     // Stores ReactionContent in string form but

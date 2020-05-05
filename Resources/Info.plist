@@ -24,7 +24,7 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>com.whoisryannystrom.freetime</string>
+			<string>com.tencent.qapm.githawkdemo</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>freetime</string>

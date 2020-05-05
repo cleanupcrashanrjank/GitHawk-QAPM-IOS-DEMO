@@ -48,6 +48,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // setup content size category change handler
         UIContentSizeCategoryChangeHandler.shared.setup()
 
+         /// Setting the log output
+         QAPM.registerLogCallback { (_ level:QAPMLoggerLevel, log:UnsafePointer<Int8>?) in
+             let sdata = String(cString:log!)
+             print(sdata)
+             //print(String(format: "log info:%s", s_data))
+         }
+
+         let multipleOptions: QAPMMonitorType = [.blue, .sigkill,.resourceMonitor, .maxMemoryStatistic, .yellow, .timeStatistic, .qqLeak]
+         QAPMConfig.getInstance().enableMonitorTypeOptions = multipleOptions
+             /*
+             QAPMMonitorType(rawValue: QAPMMonitorType.blue.rawValue | QAPMMonitorType.yellow.rawValue | QAPMMonitorType.sigkill.rawValue | QAPMMonitorType.qqLeak.rawValue | QAPMMonitorType.resourceMonitor.rawValue | QAPMMonitorType.maxMemoryStatistic.rawValue | QAPMMonitorType.maxMemoryStatistic.rawValue | QAPMMonitorType.timeStatistic.rawValue)
+        */
+         QAPMConfig.getInstance().host = "https://qapm.qq.com"
+         QAPMConfig.getInstance().blueConfig.sampleRate = 1
+         QAPMConfig.getInstance().yellowConfig.sampleRate = 1
+         QAPMConfig.getInstance().sigkillConfig.sampleRate = 1
+         QAPMConfig.getInstance().resourceMonitorConfig.sampleRate = 1
+         QAPMConfig.getInstance().maxMemoryStatisticConfig.sampleRate = 1
+         QAPMConfig.getInstance().bigChunkMemoryMonitorConfig.sampleRate = 1
+         QAPMConfig.getInstance().qqleakConfig.sampleRate = 1
+         QAPMConfig.getInstance().timeStatisticConfig.sampleRate = 1
+
+
+         QAPMConfig.getInstance().userId = "189272879"
+         QAPMConfig.getInstance().customerAppVersion = "v1.1"
+
+         /// 启动QAPM
+         QAPM.start(withAppKey: "{appkey}")
+        
         return true
     }
 

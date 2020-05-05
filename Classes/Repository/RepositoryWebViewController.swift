@@ -119,6 +119,60 @@ extension RepositoryWebViewController: WKNavigationDelegate {
     }
 
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        let uin = QAPMConfig.getInstance().userId
+        let appKey = QAPMConfig.getInstance().appKey
+        let deviceId = QAPMConfig.getInstance().deviceID
+        let isJSEnable = QAPM.monitorEnable(with: QAPMMonitorType.jsError)
+        let isWebMonitorEnable = QAPM.monitorEnable(with: QAPMMonitorType.webMonitor) ? "true" : "false"
+        let isAthenaSDKEnable = (QAPM.monitorEnable(with: QAPMMonitorType.iupMonitor)) ? "true" : "false"
+        let athenaUrl = QAPMConfig.getInstance().athenaHost
+
+        print("athenaUrl:::\(athenaUrl)")
+
+        let qapmUrl = QAPMConfig.getInstance().host
+
+        print("qapmUrl:::\(qapmUrl)")
+
+
+        let qapmBaseInfo = String(format: "window.qapmBaseInfo = {userId:'%@', appKey:'%@', deviceId: '%@', jsErrorEnable: %@, webMonitorEnable: %@, breadCrumbEnable: %@, athenaUrl: '%@', qapmUrl: '%@'}", uin, appKey, deviceId, isJSEnable, isWebMonitorEnable, isAthenaSDKEnable, athenaUrl, qapmUrl)
+        webView.evaluateJavaScript(qapmBaseInfo, completionHandler: { object, error in
+
+            if error != nil {
+                if let error = error {
+                    print("inject js sdk script error, \(error)")
+                }
+            } else {
+                print("inject js sdk script success!")
+            }
+        })
+
+
+        print("qapmBaseInfo:::\(qapmBaseInfo)")
+
+
+        webView.evaluateJavaScript("try{window.QAPM.resetConfig();} catch (e) {alert('qapm start js sdk error');alert(e.toString());alert(window.toString());  console.log(e.toString());}", completionHandler: { object, error in
+
+            if error != nil {
+                if let error = error {
+                    print("inject js sdk script error, \(error)")
+                }
+            } else {
+                print("inject js sdk script success!")
+            }
+
+        })
+        
+        webView.evaluateJavaScript("try{window.QAPM.qapmJsStart();} catch (e) {alert('qapm start js sdk error');alert(e.toString());alert(window.toString());  console.log(e.toString());}", completionHandler: { object, error in
+
+            if error != nil {
+                if let error = error {
+                    print("inject js sdk script error, \(error)")
+                }
+            } else {
+                print("inject js sdk script success!")
+            }
+
+        })
         state = .idle
     }
 

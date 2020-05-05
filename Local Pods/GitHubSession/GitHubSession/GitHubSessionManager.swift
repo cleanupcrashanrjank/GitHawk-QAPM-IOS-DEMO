@@ -32,7 +32,7 @@ public class GitHubSessionManager: NSObject {
 
     public override init() {
         let nonSharedDefaults = UserDefaults.standard
-        defaults = UserDefaults(suiteName: "group.com.whoisryannystrom.freetime") ?? .standard
+        defaults = UserDefaults(suiteName: "group.com.tencent.qapm.githawkdemo") ?? .standard
 
         // Support migration outside of Freetime app workspace/module
         NSKeyedUnarchiver.setClass(GitHubUserSession.self, forClassName: "Freetime.GithubUserSession")
