@@ -481,6 +481,10 @@
 		8960A556E8729CB4031DD641 /* Pods_FreetimeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 516CF27F9258BBD3E034F09D /* Pods_FreetimeTests.framework */; };
 		8B56452C21BC0DFF003199E2 /* Defaults+ExternalLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B56452B21BC0DFF003199E2 /* Defaults+ExternalLinks.swift */; };
 		8B75B03A211F044E009EFAEC /* UIContentSizeCategoryChangeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B75B039211F044E009EFAEC /* UIContentSizeCategoryChangeHandler.swift */; };
+		8FB213002461824A00106B71 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB212FF2461824900106B71 /* CoreLocation.framework */; };
+		8FB213022461825500106B71 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB213012461825500106B71 /* libc++.tbd */; };
+		8FB213042461825B00106B71 /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB213032461825B00106B71 /* libc.tbd */; };
+		8FB2130624618CB000106B71 /* QAPM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB2130524618CB000106B71 /* QAPM.framework */; };
 		98003D8D1FCAD7FC00755C17 /* LabelDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98003D8C1FCAD7FC00755C17 /* LabelDetails.swift */; };
 		98647DF31F758CCF00A4DE7A /* NewIssueTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98647DF21F758CCF00A4DE7A /* NewIssueTableViewController.swift */; };
 		986B87191F2B875800AAB55C /* GithubClient+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986B87181F2B875800AAB55C /* GithubClient+Search.swift */; };
@@ -1085,6 +1089,10 @@
 		7BF2239C1F91056C006CC9A2 /* File+Filename.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "File+Filename.swift"; sourceTree = "<group>"; };
 		8B56452B21BC0DFF003199E2 /* Defaults+ExternalLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Defaults+ExternalLinks.swift"; sourceTree = "<group>"; };
 		8B75B039211F044E009EFAEC /* UIContentSizeCategoryChangeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIContentSizeCategoryChangeHandler.swift; sourceTree = "<group>"; };
+		8FB212FF2461824900106B71 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8FB213012461825500106B71 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		8FB213032461825B00106B71 /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
+		8FB2130524618CB000106B71 /* QAPM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QAPM.framework; sourceTree = "<group>"; };
 		98003D8C1FCAD7FC00755C17 /* LabelDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDetails.swift; sourceTree = "<group>"; };
 		98647DF21F758CCF00A4DE7A /* NewIssueTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewIssueTableViewController.swift; sourceTree = "<group>"; };
 		986B87181F2B875800AAB55C /* GithubClient+Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GithubClient+Search.swift"; sourceTree = "<group>"; };
@@ -1171,6 +1179,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FB213042461825B00106B71 /* libc.tbd in Frameworks */,
+				8FB2130624618CB000106B71 /* QAPM.framework in Frameworks */,
+				8FB213022461825500106B71 /* libc++.tbd in Frameworks */,
+				8FB213002461824A00106B71 /* CoreLocation.framework in Frameworks */,
 				0F9440FD32236514CD7215E9 /* Pods_Freetime.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2339,6 +2351,10 @@
 		CF4CC0BFE456879DD6DBC714 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8FB2130524618CB000106B71 /* QAPM.framework */,
+				8FB213032461825B00106B71 /* libc.tbd */,
+				8FB213012461825500106B71 /* libc++.tbd */,
+				8FB212FF2461824900106B71 /* CoreLocation.framework */,
 				298744CA1F24B75300D5DF30 /* SlackTextViewController.framework */,
 				292484B71F01CB5C0054FE20 /* SwipeCellKit.framework */,
 				295F52D91EF1C0C7000B53CF /* MMMarkdown.framework */,
@@ -2490,7 +2506,7 @@
 				TargetAttributes = {
 					294EE4B8209006BF002C9CB1 = {
 						CreatedOnToolsVersion = 9.3;
-						DevelopmentTeam = 523C4DWBTH;
+						DevelopmentTeam = 5VWX78FCWA;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -2500,7 +2516,7 @@
 					};
 					294EE4C4209006C2002C9CB1 = {
 						CreatedOnToolsVersion = 9.3;
-						DevelopmentTeam = 523C4DWBTH;
+						DevelopmentTeam = 5VWX78FCWA;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -2510,7 +2526,7 @@
 					};
 					297AE8331EC0D58A00B44A1F = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 523C4DWBTH;
+						DevelopmentTeam = 5VWX78FCWA;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -2527,7 +2543,7 @@
 					};
 					297AE8471EC0D58A00B44A1F = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 523C4DWBTH;
+						DevelopmentTeam = 5VWX78FCWA;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 297AE8331EC0D58A00B44A1F;
@@ -3505,11 +3521,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 523C4DWBTH;
+				DEVELOPMENT_TEAM = 5VWX78FCWA;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				IBSC_MODULE = FreetimeWatch_Extension;
 				INFOPLIST_FILE = FreetimeWatch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.whoisryannystrom.freetime.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.qapm.githawkdemo.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -3532,11 +3548,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 523C4DWBTH;
+				DEVELOPMENT_TEAM = 5VWX78FCWA;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				IBSC_MODULE = FreetimeWatch_Extension;
 				INFOPLIST_FILE = FreetimeWatch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.whoisryannystrom.freetime.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.qapm.githawkdemo.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -3559,11 +3575,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 523C4DWBTH;
+				DEVELOPMENT_TEAM = 5VWX78FCWA;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				IBSC_MODULE = FreetimeWatch_Extension;
 				INFOPLIST_FILE = FreetimeWatch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.whoisryannystrom.freetime.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.qapm.githawkdemo.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -3583,11 +3599,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = "FreetimeWatch Extension/FreetimeWatch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 523C4DWBTH;
+				DEVELOPMENT_TEAM = 5VWX78FCWA;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "FreetimeWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.whoisryannystrom.freetime.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.qapm.githawkdemo.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -3607,11 +3623,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = "FreetimeWatch Extension/FreetimeWatch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 523C4DWBTH;
+				DEVELOPMENT_TEAM = 5VWX78FCWA;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "FreetimeWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.whoisryannystrom.freetime.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.qapm.githawkdemo.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -3631,11 +3647,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = "FreetimeWatch Extension/FreetimeWatch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 523C4DWBTH;
+				DEVELOPMENT_TEAM = 5VWX78FCWA;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "FreetimeWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.whoisryannystrom.freetime.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.qapm.githawkdemo.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -3772,7 +3788,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 523C4DWBTH;
+				DEVELOPMENT_TEAM = 5VWX78FCWA;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -3795,7 +3811,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -Xfrontend -debug-time-function-bodies -Onone -Xfrontend -warn-long-function-bodies=200 -Xfrontend -warn-long-expression-type-checking=200";
-				PRODUCT_BUNDLE_IDENTIFIER = com.whoisryannystrom.freetime;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.qapm.githawkdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3815,7 +3831,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 523C4DWBTH;
+				DEVELOPMENT_TEAM = 5VWX78FCWA;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -3838,7 +3854,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -Xfrontend -debug-time-function-bodies";
-				PRODUCT_BUNDLE_IDENTIFIER = com.whoisryannystrom.freetime;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.qapm.githawkdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3854,10 +3870,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 523C4DWBTH;
+				DEVELOPMENT_TEAM = 5VWX78FCWA;
 				INFOPLIST_FILE = FreetimeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.whoisryannystrom.FreetimeTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.qapm.githawkdemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Freetime.app/Freetime";
@@ -3870,10 +3886,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 523C4DWBTH;
+				DEVELOPMENT_TEAM = 5VWX78FCWA;
 				INFOPLIST_FILE = FreetimeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.whoisryannystrom.FreetimeTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.qapm.githawkdemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Freetime.app/Freetime";
@@ -3945,7 +3961,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 523C4DWBTH;
+				DEVELOPMENT_TEAM = 5VWX78FCWA;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -3974,7 +3990,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -Xfrontend -debug-time-function-bodies";
-				PRODUCT_BUNDLE_IDENTIFIER = com.whoisryannystrom.freetime;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.qapm.githawkdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3991,10 +4007,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 523C4DWBTH;
+				DEVELOPMENT_TEAM = 5VWX78FCWA;
 				INFOPLIST_FILE = FreetimeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.whoisryannystrom.FreetimeTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.qapm.githawkdemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Freetime.app/Freetime";
